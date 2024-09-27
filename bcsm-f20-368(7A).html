@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleena's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8f8f51;
+        }
+
+        /* Gradient background animation */
+        @keyframes gradientAnimation {
+            0% {
+                background-color: #797953;
+            }
+            50% {
+                background-color: #c7c797;
+            }
+            100% {
+                background-color: #777752;
+            }
+        }
+
+        header {
+            background: radial-gradient(circle,#a19c3d, #ecdea7);
+            padding: 20px;
+            text-align: center;
+            animation: gradientAnimation 5s infinite alternate;
+        }
+
+        /* Fade-in effect for name and introduction */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #name {
+            font-size: 3em;
+            font-weight: bold;
+            animation: fadeIn 6s ease-in;
+        }
+
+        #introduction {
+            width: 60%;
+            margin: 10px auto;
+            font-size: 1.2em;
+            line-height: 1.5em;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .profile-photo img {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            border-radius: 50%;
+            width: 100px;
+            animation: slideIn 2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        nav ul {
+            list-style-type: none;
+            background-color: #333;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li.right {
+            float: right;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* Slide-in effect for table */
+        .slide-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .slide-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        ol, ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a img {
+            margin: 0 10px;
+            width: 30px;
+            vertical-align: middle;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-photo">
+            <img src="c:\Users\aleen\OneDrive\Desktop\mypic.jfif" alt="Aleena's Profile Picture">
+        </div>
+        <div>
+            <h1 id="name">Aleena Azam</h1>
+            <p id="introduction">Web Development and Marketing</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#educational-history">Educational History</a></li>
+            <li><a href="#professional-skills">Professional Skills</a></li>
+            <li><a href="#professional-projects">Professional Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#life-ambitions">Life Ambitions</a></li>
+          
+            <li class="right"><a href="#contact-me">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="educational-history">
+        <h2>Educational History</h2>
+        <table class="slide-in" id="edu-table">
+            <tr>
+                <th>Sr. No.</th>
+                <th>Degree Title</th>
+                <th>Passing Year</th>
+                <th>CGPA</th>
+             
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bachelor of Computer Science</td>
+                <td>2025</td>
+                <td>3.3</td>
+            </tr>
+        </table>
+    </section>
+    <section id="intern">
+        <h2>Internship</h2>
+        <strong>Allied bank</strong>
+        <ul>
+            <li>Worked at Allied bank's head office at digital banking department.</li>
+            <li>Managed ABL's website, ensuring updates
+                and optimizations were implemented
+                effectively.</li>
+            <li>Collaborated with the marketing
+                department to align web content with
+                promotional campaigns.</li>
+            <li>Utilized software like Dengage, Microsoft
+                Clarity, and Google Analytics for marketing
+                insights and campaign optimization.</li>
+            
+        </ul>
+       
+      
+    </section>
+    <section id="professional-skills">
+        <h2>Professional Skills</h2>
+        <ol>
+         
+    
+            <li>Web Development (HTML, CSS, JavaScript)</li>
+            <li>Digital Marketing(SSM,SEO)</li>
+            <li>Database Management (SQL)</li>
+        </ol>
+    </section>
+
+    <section id="professional-projects">
+        <h2>Professional Projects</h2>
+        <ol>
+            <li>Pharcmacy database</li>
+            <li>Inventory Management System</li>
+            <li>Personal Portfolio Website</li>
+        </ol>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Reading Books</li>
+            <li>Coding</li>
+            <li>Traveling</li>
+           
+        </ul>
+    </section>
+
+    <section id="life-ambitions">
+        <h2>Life Ambitions</h2>
+        <strong>Achieved:</strong>
+        <ul>
+            <li>Completed my education</li>
+            <li>Learned multiple programming languages</li>
+            <li>Worked on several projects</li>
+        
+        </ul>
+        <strong>Struggling:</strong>
+        <ul>
+            <li>Become a front-end developer</li>
+            <li>Start my own business</li>
+        
+        </ul>
+    </section>
+
+    
+
+    <footer id="contact-me">
+        <p>
+            <a href="mailto:aleenaazam2027@gmail.com" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email Icon"style="width: 24px; height: 24px;">
+            </a>
+             aleenaazam2027@gmail.com
+        </p>
+        
+        <p>
+            <a href="www.linkedin.com/in/aleena-azam-48731221b" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn Profile">
+            </a>
+          Aleena Azam 
+        </p>
+    
+        <p>
+            <img src="https://img.icons8.com/color/48/000000/phone.png" alt="phone Icon"style="width: 24px; height: 24px;"> 03086618683
+        </p>
+
+        <p>
+           
+        
+    </footer>
+    
+
+    <script>
+        // Function to check if the table is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle scroll event
+        function handleScroll() {
+            const eduTable = document.getElementById('edu-table');
+            if (isInViewport(eduTable)) {
+                eduTable.classList.add('visible');
+                window.removeEventListener('scroll', handleScroll); // Remove listener once element is visible
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>
